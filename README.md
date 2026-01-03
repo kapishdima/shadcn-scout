@@ -1,36 +1,64 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# shadcn/scout
 
-## Getting Started
+![shadcn/scout](public/hero.png)
 
-First, run the development server:
+Stay up to date with **shadcn registries** — with **trusted registry tracking**, **commit-level diffs**, **MCP-powered safe upgrades**, **health signals**, and **GitHub PR automation**.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+> shadcn/rss started as “RSS updates for registries”.  
+> Now it’s a developer tool that helps you keep components from multiple registries **current without losing your local edits**.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Why
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Using multiple registries is awesome… until you ask:
 
-## Learn More
+- “Is our `Button` still up to date?”
+- “What exactly changed upstream?”
+- “Will updating overwrite our customizations?”
+- “Is this registry even maintained?”
+- “Who has time to manually migrate 12 components?”
 
-To learn more about Next.js, take a look at the following resources:
+shadcn/rss answers those questions with **global tracking + diffs + automation**.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## What it does
 
-## Deploy on Vercel
+### 1) Updates for **ALL shadcn trusted registries**
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+No more “registry authors must set up RSS / tokens / links”.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+shadcn/rss automatically tracks registries from **shadcn/directory** and ingests updates across the ecosystem.
+
+### 2) File-level diffs between registry revisions
+
+We fetch commits and compute a **diff per component file**, so you can see _exactly_ what changed.
+
+### 3) MCP (AI agent upgrades without losing your edits)
+
+Because we know what changed upstream, we can instruct your AI agent (Cursor / Claude / etc.) to **upgrade a component while preserving your local modifications**.
+
+Example workflow:
+
+- “Update `button` to the latest trusted revision”
+- Keep your tweaks (styles, variants, added props, etc.)
+- Get an explanation of what changed and why
+
+### 4) Registry Health signals
+
+There are many registries. Not all stay healthy.
+
+We continuously evaluate registries for:
+
+- availability
+- schema validity
+- integrity (expected files exist)
+- suspicious changes (optional / future)
+
+### 5) GitHub automation (PRs)
+
+Connect a GitHub repo, and when a registry you use updates:
+
+- shadcn/rss opens a **pull request**
+- you only need to **review and merge**
