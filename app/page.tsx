@@ -17,7 +17,7 @@ export default function Home() {
           rotation={3.3}
         />
       </div>
-      <main className="min-h-screen bg-black text-white selection:bg-white/20 md:px-60 px-10">
+      <main className="min-h-screen bg-black text-white selection:bg-white/20 md:px-60 px-5">
         <Hero />
         <Features />
         <Footer />

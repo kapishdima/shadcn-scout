@@ -129,7 +129,7 @@ export function Hero() {
                 </div>
 
                 {/* Terminal Content */}
-                <div className="p-6 font-mono text-sm space-y-4 min-h-80">
+                <div className="p-3 md:p-6 font-mono text-sm space-y-4 min-h-80">
                   <div className="flex items-center gap-2 text-zinc-100">
                     <span className="text-blue-500">$</span>
                     <span>{typedCommand}</span>
@@ -179,7 +179,7 @@ export function Hero() {
                             initial={{ x: -10, opacity: 0 }}
                             animate={{ x: 0, opacity: 1 }}
                             transition={{ delay: 0.2 }}
-                            className="group flex items-center justify-between p-2 pl-3 rounded-md hover:bg-white/5 transition-colors cursor-default"
+                            className="group flex items-center justify-between p-2 pl-1 md:pl-3 rounded-md hover:bg-white/5 transition-colors cursor-default"
                           >
                             <div className="flex items-center gap-3">
                               <span className="text-green-300">
@@ -200,7 +200,7 @@ export function Hero() {
                             initial={{ x: -10, opacity: 0 }}
                             animate={{ x: 0, opacity: 1 }}
                             transition={{ delay: 0.3 }}
-                            className="group flex items-center justify-between p-2 pl-3 rounded-md hover:bg-white/5 transition-colors cursor-default"
+                            className="group flex items-center justify-between p-2 pl-1 md:pl-3 rounded-md hover:bg-white/5 transition-colors cursor-default"
                           >
                             <div className="flex items-center gap-3">
                               <span className="text-red-300">
