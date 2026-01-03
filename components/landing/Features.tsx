@@ -42,7 +42,7 @@ export const Features = () => {
       <FeatureSection
         number={<Bot className="w-30 h-30" />}
         title="AI-powered safe updates"
-        description="Scout knows exactly what changed in component files. Pair it with your favorite AI agent (via MCP) to update components without losing your local customizations."
+        description="Scout knows exactly what changed in component files. Pair it with your favorite AI agent to update components without losing your local customizations."
       >
         <CodeBlock>scout check button</CodeBlock>
         <div className="mt-4 flex items-center gap-3 text-sm text-muted-foreground">
