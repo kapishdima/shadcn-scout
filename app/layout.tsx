@@ -5,7 +5,7 @@ import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "shadcn/scout - Update components from all registries",
+  title: "Scout",
   description:
     "Keep your components from multiple registries up to date — safely and automatically.",
 };
