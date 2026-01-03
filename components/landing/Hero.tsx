@@ -73,7 +73,7 @@ export function Hero() {
               className="flex flex-wrap items-center gap-6"
             >
               <div
-                className="w-1/3 group inline-flex items-center justify-between gap-3 bg-zinc-900 border border-zinc-800 pl-5 pr-2 py-2.5 rounded-xl font-mono text-sm hover:border-zinc-700 hover:bg-zinc-900 transition-all cursor-pointer shadow-lg"
+                className="md:w-1/3 w-full group inline-flex items-center justify-between gap-3 bg-zinc-900 border border-zinc-800 pl-5 pr-2 py-2.5 rounded-xl font-mono text-sm hover:border-zinc-700 hover:bg-zinc-900 transition-all cursor-pointer shadow-lg"
                 onClick={onCopy}
               >
                 <div className="space-x-2">
@@ -185,7 +185,7 @@ export function Hero() {
                               <span className="text-green-300">
                                 + components/ui/card.tsx
                               </span>
-                              <span className="text-xs text-zinc-500">
+                              <span className="text-xs text-zinc-500 hidden md:block">
                                 ui.shadcn.com
                               </span>
                             </div>
@@ -206,7 +206,7 @@ export function Hero() {
                               <span className="text-red-300">
                                 - components/ui/button.tsx
                               </span>
-                              <span className="text-xs text-zinc-500">
+                              <span className="text-xs text-zinc-500 hidden md:block">
                                 ui.shadcn.com
                               </span>
                             </div>
